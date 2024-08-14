@@ -4,6 +4,8 @@ This repository presents a signal analysis tool developed as part of a group pro
 
 The course's objective was to create a tool for a medical company that could analyze live data from medical devices, aiding doctors during surgery. The signal analyzer we developed is capable of processing live CSV data, performing real-time denoising, baseline correction, and peak detection.
 
+The tool was made using libraries such as, Pandas, Dask, Matplotlib, NumPy, SciPy, and PyWavelets.
+
 The GUI for the project
 ![final GUI](https://github.com/user-attachments/assets/fcfc8308-a454-401d-ab9c-4a5ff26a7728)
 
