@@ -15,9 +15,6 @@ import gc
 
 blocksize = 1e6  # Adjust the chunk size if necessary
 max_y_limit = 500  # Y-axis limit
-# target_data_points_per_second = 500000  # Processing rate
-
-# pdf_size_check = window_size - 50000
 
 win = Tk()
 win.geometry("750x250")
@@ -90,16 +87,6 @@ def callback(visualize):
         next_y = next_chunk.compute()["adc2"]
         original_data.append(next_y)
 
-        # Calculate the number of data points to process based on target_data_points_per_second
-        # elapsed_time = time.time() - start_time
-        # target_data_points = int(elapsed_time * target_data_points_per_second)
-
-        # if target_data_points > processed_data_count:
-        # data_to_process = next_y[: target_data_points - processed_data_count]
-        # else:
-        # data_to_process = []
-
-        # Due to data loss problems the data is uncapped but slowed down with time.sleep()
         data_to_process = next_y
         time.sleep(sleep_amount)
         data_to_process_detrended = remove_baseline(data_to_process)
@@ -283,10 +270,6 @@ def callback(visualize):
         plt.savefig(jpg_file_path, bbox_inches="tight")
 
         print(f"Last window saved as PDF: {jpg_file_path}")
-
-    # axes = plt.axes([0.81, 0.000001, 0.1, 0.075])
-    # bnext = py_btn(axes, 'Add',color="yellow")
-    # bnext.on_clicked(save_pdf)
 
 
 def analyze():
