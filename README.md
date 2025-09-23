@@ -6,11 +6,11 @@ The course's objective was to create a tool for a medical company that could ana
 
 The tool was made using libraries such as, Pandas, Dask, Matplotlib, NumPy, SciPy, and PyWavelets.
 
-The GUI for the project
+The GUI for the project:
 ![final GUI](https://github.com/user-attachments/assets/fcfc8308-a454-401d-ab9c-4a5ff26a7728)
 
-The live visualization of the CSV file.
+The live visualization of the CSV file:
 ![Data visualization window](https://github.com/user-attachments/assets/5c2e702b-1be9-4f50-a35e-05677b91a6bc)
 
-The final result of the processed signal.
+The final result of the processed signal:
 ![Benchmark signal results](https://github.com/user-attachments/assets/1d1742e1-c1b6-40cd-ba6d-a6af2181d6e4)
